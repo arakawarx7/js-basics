@@ -24,7 +24,7 @@ if (person.age >= 16) {
  * and it should print "Hello, my name is {name}"
  */
  function greet(name){
-    console.log('hello my name is ',name);
+    console.log('Hello, my name is '+name);
  }
 
  greet(person.name);
@@ -32,8 +32,15 @@ if (person.age >= 16) {
 /* Create an array called `dataTypes` with atleast 1 of every data type;
  * (there are 6 different data types);
  */
-var dataTypes = ['hello',1,true,null,undefined];
+var dataTypes = ['hello',1,true,null,undefined, person];
 /* Create a `dog` object
  * it should have a `bark` function that makes your dog bark!
  * It should also have a name attribute with the value of 'Spot'
  */
+var dog = {
+  bark : function(){
+    console.log('bark');
+  },
+
+  name:'Spot'
+};
